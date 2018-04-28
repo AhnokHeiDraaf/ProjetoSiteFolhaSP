@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>O site de teste para novos webs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> <!-- Importando o CSS do Bootstrap -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" /> <!-- Importando o meu CSS -->
+</head>
+<body>
+    <header>
+        <div class="container"> <!-- Criando um conteiner para minhas informações (Classe do bootstrap) -->
+            <div class="row"> <!-- Criando uma linha da minha grid -->
+                <div class="col-lg-3 col-sm-2 col-xs-3 div-botao-menu"> <!-- Aqui eu defino que este conteúdo irá ocupar 3 colunas da minha grid em grandes resoluções, 2 em resoluções médias e 3 em resoluções pequenas -->
+                    <!-- Aqui e em várias partes do código eu importo 3 vezes a imagem, uma pra cada tamanho de tela -->
+                    <!-- Essa só aparece em telas grandes -->
+                    <img src="img/desktop/menu-icon.png" alt="Ícone do menu" class="hidden-xs hidden-sm hidden-md">
+                    <!-- Essa só aparece em telas médias -->
+                    <img src="img/tablet/menu-icon.png" alt="Ícone do menu"  class="hidden-xs hidden-lg">
+                    <!-- Essa só aparece em telas menores, o que define qual tela aparece são as classes, estas classes estão sendo herdadas do bootstrap -->
+                    <img src="img/mobile/menu-icon.png" alt="Ícone do menu"  class="hidden-sm hidden-md hidden-lg">
+                </div>
+                <div class="col-md-3 col-xs-4 div-logo-folha">
+                    <img src="img/desktop/logo.png" alt="Ícone do menu" class="hidden-xs hidden-sm hidden-md">
+                    <img src="img/tablet/logo.png" alt="Ícone do menu"  class="hidden-xs hidden-lg">
+                    <img src="img/mobile/logo.png" alt="Ícone do menu"  class="hidden-sm hidden-md hidden-lg">
+                </div>
+                <div class="col-lg-3 col-xs-4 txt-header">
+                    <h5>O site de teste para <strong>novos webs</strong></h5>
+                </div>
+                <div class="col-lg-3 col-sm-2 btn-header">
+                    <button type="button" class="btn btn-default btn-facebook"><img src="img/logo-facebook.png" alt="Logo do Facebook"><span> Curtir</span></button>
+                    <button type="button" class="btn btn-default btn-twitter"><img src="img/logo-twitter.png" alt="Logo do Twitter"><span> Seguir</span></button>
+                </div>
+            </div>
+        </div>
+    </header> <!-- Fim daquele header azul -->
+    <div class="container">
+        <!-- Na linha abaixo eu acrescento a imagem com as setas do lado -->
+        <div class="row">
+            <div class="col-xs-12 text-center image-rotate">
+                <img src="img/desktop/image_rotate.png" alt="Imagem do carousel" class="hidden-xs hidden-sm hidden-md">
+                <img src="img/tablet/image_rotate.png" alt="Imagem do carousel" class="hidden-xs hidden-lg">
+                <img src="img/mobile/image_rotate.png" alt="Imagem do carousel" class="hidden-sm hidden-md hidden-lg">
+                <!-- Este é o texto que fica em cima da imagem -->
+                <div class="texto-image-rotate">
+                    <h3>Mussum Ipsum cacilds</h3>
+                    <p class="hidden-xs">Si num tem leite então bota uma pinga aí cumpadi! Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose.</p>
+                </div>
+                <!-- ball-direita e ball-esquerda é a bolinha que fica em volta das setas nos lados da imagem -->
+                <div class="ball-direita text-center">
+                    <img src="img/desktop/arrow_right-icon.png" alt="Anterior">
+                </div>
+                <div class="ball-esquerda text-center">
+                    <img src="img/desktop/arrow_left-icon.png" alt="Próximo">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 imgs-klal">
+                <div class="thumbnail">
+                    <img src="img/desktop/highlight-01.png" alt="Pindureta" class="hidden-xs hidden-sm hidden-md">
+                    <img src="img/tablet/highlight-01.png" alt="Pindureta" class="hidden-xs hidden-lg">
+                    <img src="img/mobile/highlight-01.png" alt="Pindureta" class="hidden-sm hidden-md hidden-lg">
+                    <div class="text-img-k1">
+                        <h4>Pindureta</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 imgs-klal">
+                <div class="thumbnail">
+                    <img src="img/desktop/highlight-02.png" alt="Bolis" class="hidden-xs hidden-sm hidden-md">
+                    <img src="img/tablet/highlight-02.png" alt="Bolis" class="hidden-xs hidden-lg">
+                    <img src="img/mobile/highlight-02.png" alt="Bolis" class="hidden-sm hidden-md hidden-lg">
+                    <div class="text-img-k1">
+                        <h4>Bolis</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 imgs-klal">
+                <div class="thumbnail">
+                    <img src="img/desktop/highlight-03.png" alt="Sapien" class="hidden-xs hidden-sm hidden-md">
+                    <img src="img/tablet/highlight-03.png" alt="Sapien" class="hidden-xs hidden-lg">
+                    <img src="img/mobile/highlight-03.png" alt="Sapien" class="hidden-sm hidden-md hidden-lg">
+                    <div class="text-img-k1">
+                        <h4>Sapien</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1">
+                <p>.</p>
+            </div>
+
+            <div class="col-md-4 imgs-klal">
+                    <div class="thumbnail">
+                        <img src="img/desktop/divoltis_porris-01.png" alt="Consetis" class="hidden-xs hidden-sm hidden-md">
+                        <img src="img/tablet/divoltis_porris-01.png" alt="Consetis" class="hidden-xs hidden-lg">
+                        <img src="img/mobile/divoltis_porris-01.png" alt="Consetis" class="hidden-sm hidden-md hidden-lg">
+                        <div class="txtlocao">
+                            <h4>Consetis</h4>
+                            <p>Manduma Pindureta que um dia nois paga.</p>
+                        </div>
+                    </div>
+                </div>
+    
+        
+            <div class="col-md-4 imgs-klal">
+                <div class="thumbnail">
+                    <img src="img/desktop/divoltis_porris-02.png" alt="Aenean" class="hidden-xs hidden-sm hidden-md">
+                    <img src="img/tablet/divoltis_porris-02.png" alt="Aenean" class="hidden-xs hidden-lg">
+                    <img src="img/mobile/divoltis_porris-02.png" alt="Aenean" class="hidden-sm hidden-md hidden-lg">
+                    <div class="txtlocao">
+                        <h4>Aenean</h4>
+                        <p>Loreere Ipsum Cheater Maldito</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 imgs-klal">
+                <div class="thumbnail">
+                    <img src="img/desktop/ads-300x600.png" alt="Ads" class="hidden-xs hidden-sm hidden-md">
+                    <img src="img/tablet/ads-300x250.png" alt="Ads" class="hidden-xs hidden-lg">
+                    <img src="img/mobile/ads-300x250.png" alt="Ads" class="hidden-sm hidden-md hidden-lg">
+                    <div class="txtlocao">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 imgs-klol">
+                <div class="thumbnail">
+                    <img src="img/desktop/divoltis_porris-03.png" alt="Matis" class="hidden-xs hidden-sm hidden-md">
+                    <img src="img/tablet/divoltis_porris-03.png" alt="Matis" class="hidden-xs hidden-lg">
+                    <img src="img/mobile/divoltis_porris-03.png" alt="Matis" class="hidden-sm hidden-md hidden-lg">
+                    <div class="txtlocao">
+                        <h4>Matis</h4>
+                        <p>Não Necessita de Toda essa agressividade!!!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 imgs-kloal">
+                <div class="thumbnail">
+                    <img src="img/desktop/divoltis_porris-04.png" alt="Divinis" class="hidden-xs hidden-sm hidden-md">
+                    <img src="img/tablet/divoltis_porris-04.png" alt="Divinis" class="hidden-xs hidden-lg">
+                    <img src="img/mobile/divoltis_porris-04.png" alt="Divinis" class="hidden-sm hidden-md hidden-lg">
+                    <div class="txtlocao">
+                        <h4>Divinis</h4>
+                        <p>Esse cara distorcido ai é o Sósia do Vin Diesel?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-1">
+                <p>.</p>
+            </div>
+
+            <div class="col-md-4 imgs-klal">
+                <div class="txtlocao">
+                    <h4>Eu não sei oq colocar Aqui</h4>
+                    <p>Ore wa baka janai</p>
+                    <hr>
+                    <p>Ore wa baka janai</p>
+                    <hr>
+                    <p>Ore wa baka janai</p>
+                    <hr>
+                    <p>Ore wa baka janai</p>
+                    <hr>
+                    <p>Ore wa baka janai</p>
+                </div>
+
+            <div class="col-lg-4 imgs-kloal">
+                    <div class="img">
+                        <img src="img/desktop/se_pirulita-01.png" alt="Divinis" class="hidden-xs hidden-sm hidden-md">
+                        <img src="img/tablet/se_pirulita-01.png" alt="Divinis" class="hidden-xs hidden-lg">
+                        <img src="img/mobile/se_pirulita-01.png" alt="Divinis" class="hidden-sm hidden-md hidden-lg">
+                        <div class="txtlocao">
+                            <h4>Divinis</h4>
+                            <p>Tom Tom TOM TOM Tom</p>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="col-lg-4 imgs-kloaal">
+                    <div class="img">
+                        <img src="img/desktop/suco_de_cevadiss-01.png" alt="Divinis" class="hidden-xs hidden-sm hidden-md">
+                        <img src="img/tablet/suco_de_cevadiss-01.png" alt="Divinis" class="hidden-xs hidden-lg">
+                        <img src="img/mobile/suco_de_cevadiss-01.png" alt="Divinis" class="hidden-sm hidden-md hidden-lg">
+                        <div class="txtlocao">
+                            <h4>Divinis</h4>
+                            <p>Uma simples imagem meramente ilustrativa de um drúida</p>
+                        </div>
+                    </div>
+            </div>
+        
+            <div class="col-lg-4 imgs-kloalo">
+                    <div class="img">
+                        <img src="img/desktop/se_pirulita-02.png" alt="Divinis" class="hidden-xs hidden-sm hidden-md">
+                        <img src="img/tablet/se_pirulita-02.png" alt="Divinis" class="hidden-xs hidden-lg">
+                        <img src="img/mobile/se_pirulita-02.png" alt="Divinis" class="hidden-sm hidden-md hidden-lg">
+                        <div class="txtlocao">
+                            <h4>Divinis</h4>
+                            <p>Inês Brasil não é meme</p>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="col-lg-4 imgs-kloaalo">
+                    <div class="img">
+                        <img src="img/desktop/suco_de_cevadiss-02.png" alt="Divinis" class="hidden-xs hidden-sm hidden-md">
+                        <img src="img/tablet/suco_de_cevadiss-02.png" alt="Divinis" class="hidden-xs hidden-lg">
+                        <img src="img/mobile/suco_de_cevadiss-02.png" alt="Divinis" class="hidden-sm hidden-md hidden-lg">
+                        <div class="txtlocao">
+                            <h4>Divinis</h4>
+                            <p>O Olho que tudo vê</p>
+                        </div>
+                    </div>
+            </div>
+
+
+        </div>
+    </div> <!-- container !-->
+<br><br><br><br><br>
+       
+
+    <div class="col-md-12 footerlegal">
+        <h4>^ Voltar ao Topo</h4>
+    </div>
+    <div class="col-md-12 footerlegal2">
+        <img src="img/desktop/logo_footer.png" alt="Logo de baixo">
+        <p>Todos os direitos reservador a mim! HAHAHAHAHA. E-Mail: <a href="#">enricovivan21@gmail.com</a></p>
+    </div>
+</body>
+</html>

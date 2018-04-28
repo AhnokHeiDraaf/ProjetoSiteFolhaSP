@@ -1,0 +1,192 @@
+/* Aqui eu defino o fundo, tamanho e position do header */
+header{
+    background-color: #3199DC;
+    height: 100px;
+    width: 100%;
+    position: fixed;; /* Isso serve para que quando rolar a tela pra baixo o header fique fixo */
+    z-index: 999999;
+}
+.div-botao-menu{
+    line-height:100px !important;/* Isso é pra alinhamento vertical do botão */
+}
+.div-logo-folha{
+    height:100px;
+}
+.div-logo-folha>img{
+    position: absolute;/* Teve que ficar absolute pra forçar o final da imagem junto com o final do header */
+    top: 20px;
+    height: 80px;
+}
+.txt-header{
+    height:100px;
+}
+.txt-header>h5{
+    color: #fff;
+    line-height:100px;
+}
+.btn-header{
+    height:100px;
+    line-height:100px;
+}
+.btn-facebook{
+    color: #335190;
+}
+.btn-twitter{
+    color: #00AFF3;
+}
+/* Até aqui foi referente ao header, daqui pra baixo é referente a imagem com as setas do lado */
+.image-rotate{
+    margin-top: 150px;/* Foi preciso add isso para que a imagem não fique embaixo do header, já que a imagem tem position relative e o header position fixed */
+}
+.texto-image-rotate{
+    margin-top: -150px;
+    text-align: left;
+    color: #fff;
+    margin-left: 20px;
+}
+.texto-image-rotate>h3{
+    background-color:#3199DC;
+    position: absolute;/* Foi necessário deixar absolute para garantir que não fique embaixo da imagem */
+    text-transform: uppercase;
+    max-width: 100%;
+}
+.texto-image-rotate>p{
+    position: absolute;
+    top: 370px;
+    font-size: 22px;
+    max-width: 100% !important;
+}
+.imgs-c1{
+    position: absolute;
+    margin-top: 250px;
+}
+.text-img-k1{
+    margin-top: -75px;
+    text-align: left;
+    color: white;
+}
+.text-img-k1>h4{
+    background-color: rgb(250, 58, 24);
+    position: absolute;
+    text-transform: uppercase;
+    max-width: 100%;
+}
+.imgs-c2{
+    margin-top: 250px;
+    left: 400px
+}
+.imgs-klal{
+    margin-top: 200px
+}
+.imgs-klol{
+    margin-top: -300px
+}
+.imgs-kloal{
+    margin-top: -300px;
+    margin-left: 390px
+}
+.imgs-kloaal{
+    margin-top: -300px;
+    margin-left: 700px
+}
+.imgs-kloalo{
+    margin-left: 390px;
+}
+.imgs-kloaalo{
+    margin-top: -250px;
+    margin-left: 700px;
+}
+.txtlocao>h4{
+    color: #3199DC
+}
+.footerlegal{
+    background-color: #00AFF3;
+    width: 100%;
+    height: 50px;
+}
+.footerlegal>h4{
+    margin-left: 700px
+}
+.footerlegal2{
+    width: 100%;
+    height: 100px;
+    background-color: #18284b;
+}
+.footerlegal2>img{
+    max-width: 100%;
+    margin-left: 200px;
+    margin-top: 25px
+}
+.footerlegal2>p{
+    margin-top: -50px;
+    margin-left: 500px;
+    color: white;   
+}
+/* Até aqui o CSS é aplicado em qualquer situação */
+/* Daqui pra baixo, o CSS só aplicado a resolução menores que 768px, isso por causa da linha abaixo */
+@media (max-width: 768px ) {
+    .txt-header{
+        display: none;
+    }
+    .btn-header{
+        display: none;
+    }
+    .texto-image-rotate>h3{
+        top: 200px;
+    }
+    .ball-direita, .ball-esquerda{
+        display: none;
+    }
+}
+/* O código abaixo só será aplicado quando o acesso vier de resoluções maiores que 768px e menores que 1200px */
+@media (min-width: 768px) and (max-width: 1200px){
+    .btn-header>button>span{
+        display: none;
+    }
+    .btn-header>button{
+        width: 30px;
+    }
+    .btn-header>button>img{
+        width: 15px;
+        height: 15px;
+    }
+    .texto-image-rotate>p{
+        font-size: 20px;
+        width: 432px;
+    }
+    .ball-direita, .ball-esquerda{
+        display: none;
+    }
+}
+/* O código abaixo só será aplicado quando o acesso vier de resoluções maiores que 1200px */
+@media (min-width:1200px){
+    .btn-header>button{
+        margin-left: 20px;
+    }
+    .btn-header>button>img{
+        width: 20px;
+        height: 20px;
+    }
+    .texto-image-rotate{
+        width: 1139px;
+    }
+    .ball-direita, .ball-esquerda{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        line-height:50px;
+        background-color: #fff;
+        border-radius: 50%;
+    }
+    .ball-direita:hover,.ball-esquerda:hover{
+        background-color: #ddd;
+    }
+    .ball-esquerda{
+        top:200px;
+        left: -9px;
+    }
+    .ball-direita{
+        top:200px;
+        left:1130px;
+    }
+}
